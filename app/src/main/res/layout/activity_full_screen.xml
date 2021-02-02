@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".FullScreenActivity">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/downloadWallpaper" />
+
+    <Button
+        android:id="@+id/downloadWallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/setWallpaper"
+        android:layout_margin="5dp"
+        android:onClick="DownloadWallpaper"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="DOWNLOAD WALLPAPER" />
+
+    <Button
+        android:id="@+id/setWallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:onClick="SetWallpaper"
+        android:padding="10dp"
+        android:text="Set Wallpaper" />
+
+</RelativeLayout>
